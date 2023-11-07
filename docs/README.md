@@ -2,17 +2,15 @@
 
 Discover the **Theengs Bridge**, a smart Bridge and BLE gateway in one device. This guide will help you quickly connect your Bridge to an MQTT broker.
 
-1. **Plug it in**: Plug the device to an USB-C power supply. An orange LED will turn on steadily.
+1. **Plug it in**: Connect the device to a 5V USB-C power supply. An orange LED will turn on steadily.
 
 2. **Connect to WiFi**: On your smartphone, search for a WiFi network starting with `OMG_`.
-Alternatively you can connect an ethernet cable to the bridge and access the configuration by typing the bridge IP into a browser (the bridge IP can be found on your router or by a serial connection)
+Alternatively, you can connect an ethernet cable to the bridge and access the configuration by typing the bridge IP into a browser (the bridge IP can be found on your router or by a serial connection)
 <p align="left">
   <img src="./img/Theengs-plug01-wifi.png">
 </p>
 
-3. **Enter the password**: Click on the network and enter the last 8 digits of the device's MAC address as the password (the MAC address is printed on the side of the device). For example, if the MAC address is `409151234678`, the password will be `51234678`.
-
-4. **Access the setup page**: A webpage may pop up automatically. If not, click on the gear icon next to the WiFi network.
+3. **Access the setup page**: A webpage may pop up automatically. If not, click on the gear icon next to the WiFi network.
 <p align="left">
   <img src="./img/Theengs-plug01-wifi-manage-gear.png">
 </p>
@@ -25,12 +23,12 @@ Alternatively you can connect an ethernet cable to the bridge and access the con
 If your smartphone disconnects from the Bridge's WiFi network and reconnects to your main WiFi, "forget" your main WiFi to maintain a stable connection with the Bridge. After configuration, reconnect to your main WiFi. If the configuration portal doesn't appear, access it at `192.168.4.1` in your web browser.
 :::
 
-5. **Configure WiFi**: Click on "Configure WiFi".
+4. **Configure WiFi**: Click on "Configure WiFi".
 <p align="left">
   <img src="./img/Theengs-plug01-wifi-manage-configure.png">
 </p>
 
-6. **Enter your settings**: Fill in the following required details:
+5. **Enter your settings**: Fill in the following required details:
 * Your WiFi Access Point (SSID - optional if ethernet connected)
 * Your WiFi password (Password - optional if ethernet connected)
 * Your MQTT server
@@ -51,7 +49,7 @@ Optionally, adjust the following settings if needed:
 When using the bridge with ethernet, entering WiFi Access Point and Password will enable to have a fallback connection network if ethernet is disconnect.
 :::
 
-7. **Save**: Click on Save.
+6. **Save**: Click on Save.
 
 When connected, the bridge first LED should turn green and second LED will blink blue during scanning.
 
@@ -70,7 +68,7 @@ a. Read and follow all instructions provided in this manual before using the The
 
 b. The Theengs Bridge is designed for indoor use only. Do not use it outdoors or expose it to moisture, excessive heat, or direct sunlight.
 
-c. Ensure that the power supply used, is in good working condition and complies with local electrical codes.
+c. Ensure that the power supply used is in good working condition and complies with local electrical codes.
 
 e. Keep the Theengs Bridge away from water, flammable materials, and sources of ignition.
 
