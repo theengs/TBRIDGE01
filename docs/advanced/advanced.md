@@ -55,12 +55,25 @@ For example with auto-discovery
 
 The BLE parameters can be changed with the commands detailed into [BLE gateway usage](https://docs.openmqttgateway.com/use/ble.html).
 
+## Erasing Theengs Bridge configuration
+If connected to an MQTT broker, the bridge configuration can be erased with an [MQTT command](https://docs.openmqttgateway.com/use/gateway.html#erase-the-esp-settings) or the button available in HA "SYS: Erase credentials".
+If not connected to an MQTT broker you can reset the board by following the procedure below:
+* Connect the bridge to your computer with a USB cable
+* Go to the upload portal https://docs.openmqttgateway.com/dev/upload/web-install.html
+* Select "theengs-bridge", and keep "Erase Flash" selected
+* Click on INSTALL, and wait a few minutes
+* The bridge will have now the latest version and the settings erased
+
 ## Updating Theengs Bridge
-Theengs bridge can benefit from Over The Air updates following these different methods:
+Theengs bridge can benefit from updates following these different methods:
 * From Home Assistant directly, Settings->Devices & Services->Devices, click on the bridge, click on the firmware version, click Update
+* By connecting to your computer with a USB cable
+  * Go to the upload portal https://docs.openmqttgateway.com/dev/upload/web-install.html
+  * Select "theengs-bridge", and unselect "Erase Flash" to keep your parameters
+  * Click on INSTALL, and wait a few minutes
+  * The bridge will have now the latest version
 * From the WifiManager portal, by uploading a binary directly to the bridge
   * Download the last version binary named "Theengs-Bridge-firmware" from the Github [release page of OpenMQTTGateway](https://github.com/1technophile/OpenMQTTGateway/releases)
-  * Reset the bridge with a long button press
   * Connect to the Wifi access point with your smartphone
   * Click Update
   * Add the binary downloaded previously
