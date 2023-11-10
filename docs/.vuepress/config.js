@@ -18,7 +18,7 @@ module.exports = {
   ],
   themeConfig: {
     smoothScroll: true,
-    repo: 'theengs/TBRIDGE1',
+    repo: 'theengs/TBRIDGE01',
     docsDir: 'docs',
     docsBranch: 'development',
     lastUpdated: 'Last Updated',
