@@ -59,7 +59,7 @@ The BLE parameters can be changed with the commands detailed into [BLE gateway u
 If connected to an MQTT broker, the bridge configuration can be erased with an [MQTT command](https://docs.openmqttgateway.com/use/gateway.html#erase-the-esp-settings) or the button available in HA "SYS: Erase credentials".
 If not connected to an MQTT broker you can reset the board by following the procedure below:
 * Connect the bridge to your computer with a USB cable
-* Go to the upload portal https://docs.openmqttgateway.com/dev/upload/web-install.html
+* Go to the upload portal https://docs.openmqttgateway.com/upload/web-install.html
 * Select "theengs-bridge", and keep "Erase Flash" selected
 * Click on INSTALL, and wait a few minutes
 * The bridge will have now the latest version and the settings erased
