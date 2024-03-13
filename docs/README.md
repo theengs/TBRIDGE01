@@ -55,10 +55,6 @@ When connected, the bridge first LED should turn green and second LED will blink
 
 For further integration with a Home Automation Controller, refer to the [OpenMQTTGateway documentation](https://docs.openmqttgateway.com/use/ble.html).
 
-::: tip
-To reset the parameters, access the bridge portal through its IP address (login: admin, default password: OTAPASSWORD). The WiFi configuration portal will then be available (step 2).
-:::
-
 For assistance or support, email: [florian@theengs.io](mailto:florian@theengs.io).
 
 ## Safety Instructions
