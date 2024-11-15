@@ -2,6 +2,31 @@
 
 ## LED Indicator Guide
 
+From v1.8.0 and after
+* First Led: Power
+* Second Led: Network
+* Third Led: Broker connection
+* Fourth Led: Operations
+
+### Steady Yellow third Led
+The bridge is generating an Access Point for network onboarding.
+
+### Blinking Orange third Led
+The bridge is disconnected from the MQTT broker.
+
+### Blinking Orange second Led
+The bridge is disconnected from the network.
+
+### Steady Green third Led
+The bridge is connected to both the network and the MQTT broker.
+
+### Blue fourth Led
+An update or operation is currently in progress.
+
+### Blinking purple fourth Led
+Over the Air update in progress
+
+Before v1.8.0
 ### Steady Orange
 The bridge is generating an Access Point for network onboarding.
 
