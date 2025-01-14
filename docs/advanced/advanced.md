@@ -93,7 +93,7 @@ If not connected to an MQTT broker you can reset the board by following the proc
 Theengs bridge can benefit from updates following these different methods:
 * From Home Assistant directly, Settings->Devices & Services->Devices, click on the bridge, click on the firmware version, click Update
 * By connecting to your computer with a USB cable
-  * Go to the upload portal https://docs.openmqttgateway.com/dev/upload/web-install.html
+  * Go to the upload portal https://docs.openmqttgateway.com/upload/web-install.html
   * Select "theengs-bridge", and unselect "Erase Flash" to keep your parameters
   * Click on INSTALL, and wait a few minutes
   * The bridge will have now the latest version
