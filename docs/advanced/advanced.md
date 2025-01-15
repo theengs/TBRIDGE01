@@ -91,19 +91,9 @@ If not connected to an MQTT broker you can reset the board by following the proc
 
 ## Updating Theengs Bridge
 Theengs bridge can benefit from updates following these different methods:
+
+### For v1.8.0 and after
 * From Home Assistant directly, Settings->Devices & Services->Devices, click on the bridge, click on the firmware version, click Update
-* By connecting to your computer with a USB cable
-  * Go to the upload portal https://docs.openmqttgateway.com/upload/web-install.html
-  * Select "theengs-bridge", and unselect "Erase Flash" to keep your parameters
-  * Click on INSTALL, and wait a few minutes
-  * The bridge will have now the latest version
-* From the WifiManager portal, by uploading a binary directly to the bridge
-  * Download the last version binary named "Theengs-Bridge-firmware" from the Github [release page of OpenMQTTGateway](https://github.com/1technophile/OpenMQTTGateway/releases)
-  * Connect to the Wifi access point with your smartphone
-  * Click Update
-  * Add the binary downloaded previously
-  * Click Update and wait a few minutes until you get "Update successfull"
-  * Reconfigure the bridge into the Wifi portal
 * From an MQTT command to trigger the download of the firmware from a webserver
   * Connect to your MQTT broker with a client like MQTT Explorer
   * Publish the update command like below (OTAPASSWORD being your Over The Air password if you changed it during the configuration):
@@ -117,4 +107,18 @@ To this topic (112233445566 being your gateway_name):
 ```
 home/112233445566/commands/MQTTtoSYS/firmware_update
 ```
-  * The bridge will restart with the new version
+* The bridge will restart with the new version
+
+### For all versions
+* By connecting to your computer with a USB cable
+  * Go to the [upload portal](https://docs.openmqttgateway.com/upload/web-install.html)
+  * Select "theengs-bridge" if you have TBRIDGE01, 'theengs-bridge-v11" if you have TBRIDGE02, and unselect "Erase Flash" to keep your parameters
+  * Click on INSTALL, and wait a few minutes
+  * The bridge will have now the latest version
+* From the WifiManager portal, by uploading a binary directly to the bridge
+  * Download the last version binary named "Theengs-Bridge-firmware" from the Github [release page of OpenMQTTGateway](https://github.com/1technophile/OpenMQTTGateway/releases)
+  * Connect to the Wifi access point with your smartphone
+  * Click Update
+  * Add the binary downloaded previously
+  * Click Update and wait a few minutes until you get "Update successfull"
+  * Reconfigure the bridge into the Wifi portal
